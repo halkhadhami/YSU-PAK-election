@@ -64,7 +64,7 @@ input[type="submit"]:hover {
 .option-info {
   position: absolute;
   display: none;
-  background-color: transparent;
+  background-color: rgba(255, 255, 255, 0.4); /* Change the transparency here (0.8) */
   font-weight: bold;
   font-size: 20px;
   padding: 10px;
@@ -78,7 +78,10 @@ input[type="submit"]:hover {
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 1;
+  color: black; /* Change the text color here */
+  font-family: Arial, sans-serif; /* Change the font family here */
 }
+
 
 .option-info-text {
   display: block;
