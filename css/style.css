@@ -6,6 +6,7 @@ form {
   border: 1px solid #ccc;
   border-radius: 10px;
 }
+
 /* Set default form width */
 form {
   max-width: 500px;
@@ -25,7 +26,6 @@ form {
   }
 }
 
-
 /* Style the heading */
 h1 {
   text-align: center;
@@ -42,24 +42,24 @@ label {
 }
 
 .required {
-	color: red;
+  color: red;
 }
 
-
 /* Style the input fields */
-input[type=text], input[type=email], select {
+input[type="text"],
+input[type="email"],
+select {
   font-size: 16px;
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
   margin-bottom: 20px;
-  width: 97%;
-  display: block;
+  width: 100%;
 }
 
 /* Style the submit button */
-input[type=submit] {
+input[type="submit"] {
   background-color: #4CAF50;
   color: #fff;
   font-size: 20px;
@@ -69,69 +69,67 @@ input[type=submit] {
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  display: block;
   width: 100%;
   margin-bottom: 20px;
 }
 
-input[type=submit]:hover {
+input[type="submit"]:hover {
   background-color: #45a049;
 }
- /*+======================*/
- 
- 
+
+/* Option styling */
 .option-info {
-	position: absolute;
-	display: none;
-	background-color: transparent;
-	font-weight: bold;
-	font-size: 20px;
-	padding: 10px;
-	border: 1px solid gray;
-	border-radius: 5px;
-	pointer-events: none;
-	
-	transition: transform 0.3s ease;
-	text-align: center;
-	width: 85%;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	z-index: 1;
+  position: absolute;
+  display: none;
+  background-color: transparent;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 10px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  pointer-events: none;
+  transition: transform 0.3s ease;
+  text-align: center;
+  width: 85%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
 }
+
 .option-info-text {
-    display: block;
-    margin-bottom: 10px;
-    word-wrap: break-word;
+  display: block;
+  margin-bottom: 10px;
+  word-wrap: break-word;
 }
 
 .option:hover .option-info {
-	display: block;
-	transform: translate(-50%, -50%) scale(1.1);
+  display: block;
+  transform: translate(-50%, -50%) scale(1.1);
 }
 
 .option {
-	display: inline-block;
-	width: 100%;
-	margin-right: 20px;
-	vertical-align: top;
-	position: relative;
+  display: inline-block;
+  width: 100%;
+  margin-right: 20px;
+  vertical-align: top;
+  position: relative;
 }
 
 .option-image {
-	position: relative;
-	width: 100%;
-	height: 100%;
-	overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
 }
 
 .option-image img {
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-	transition: transform 0.3s ease;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
 }
 
 .option:hover .option-image img {
-	transform: scale(1.6);
+  transform: scale(1.6);
 }
