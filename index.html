@@ -151,7 +151,10 @@
 			</fieldset>	
 		
 				
-			<fieldset>	
+			<fieldset>
+
+				<h1>&#128071; Please fill your data carefully and select your Elect &#128071;</h1>
+				
 				<div>
 					<label for="name">Student's Name: <span class="required">*</span></label>
 					<input type="text" value="" id="name" name="name" required>
@@ -184,6 +187,8 @@
 						<option value="per6" style="background-image: url('images/6.jpg')">Option6</option>
 					</select>
 				</div>
+				
+				<input type="hidden" value="" id="device-ip" name="device-ip">
 
 				<input type="submit" value="Submit">
 			</fieldset>
@@ -194,7 +199,19 @@
 
 	
 
-	
+	<script>
+	  // Get the device IP using a public API (this is just an example)
+	  fetch('https://api.ipify.org?format=json')
+		.then(response => response.json())
+		.then(data => {
+		  // Set the device IP as the value of the hidden field
+		  document.getElementById('device-ip').value = data.ip;
+		})
+		.catch(error => {
+		  console.error('Error retrieving device IP:', error);
+		});
+	</script>
+
 	<script>
 		const form = document.querySelector('form');
 		const emailInput = document.getElementById('email');
@@ -223,6 +240,7 @@
 		  // save submitted email to local storage
 		  localStorage.setItem('submittedEmail', submittedEmail);
 		}
+		
 
 	</script>
 		
